@@ -1,13 +1,13 @@
 let numeros = [3 , 5, 7, 1, 6];
 
-console.log(mayor(numeros));
+console.log(menor(numeros));
 
-function mayor(nums) {
-    let max = nums[0];
+function menor(nums) {
+    let min = nums[0];
     for (let i=0; i < nums.length; i++) {
-        if (nums[i]> max) {
-            max = nums[i];
+        if (nums[i]< min) {
+            min = nums[i];
         }
     }
-    return max;
+    return min;
 }
